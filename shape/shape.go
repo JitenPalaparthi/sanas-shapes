@@ -34,3 +34,7 @@ func (c *Common) GetUUID() string {
 func (c *Common) ToString() string {
 	return fmt.Sprint(c.Data)
 }
+
+func (c *Common) ToBytes() []byte {
+	return []byte(fmt.Sprint(c.Data))
+}
